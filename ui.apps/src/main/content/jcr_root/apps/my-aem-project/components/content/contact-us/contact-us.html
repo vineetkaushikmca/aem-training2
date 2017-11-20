@@ -1,0 +1,22 @@
+<div class="ups-contact-us-form">
+<form class="contact-us-form" id="contact-us-form" method="POST">
+   <p class="contact-form-required-text">All Fields Required</p>
+   <div class="login-group">
+      <div class="form-group">
+         <input type="text" id="contact-name" name="contactName" placeholder="Name" tabindex="1" required="">
+      </div>
+      <div class="form-group">
+         <input type="email" id="contact-email" name="contactEmail" placeholder="E-mail Address" tabindex="2" required="">
+      </div>
+      <div class="form-group">
+         <input type="text" id="contact-company" name="contactCompany" placeholder="Company Name" tabindex="3" required="">
+      </div>
+      <div class="form-group">
+         <textarea name="contactquestion" id="contactQuestion"  rows="3" tabindex="4" placeholder="Question?" required=""></textarea>
+      </div>
+   </div>
+   <input type="hidden" id="emailId" name="emailId" value="${properties.emailId}" />
+   <button type="submit" class="button" tabindex="5">Submit Question</button>
+</form>
+
+</div>
