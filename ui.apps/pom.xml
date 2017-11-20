@@ -6,8 +6,8 @@
     <!-- P A R E N T P R O J E C T D E S C R I P T I O N -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>com.vikaushi.aem.enablement</groupId>
-        <artifactId>enablement-project</artifactId>
+        <groupId>com.vikaushi.aem</groupId>
+        <artifactId>training</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -15,15 +15,20 @@
     <!-- P R O J E C T D E S C R I P T I O N -->
     <!-- ====================================================================== -->
 
-    <artifactId>enablement-project.ui.apps</artifactId>
+    <artifactId>training.ui.apps</artifactId>
     <packaging>content-package</packaging>
-    <name>My AEM Project Content Package</name>
+    <name>Training Content Package</name>
 
     <dependencies>
         <dependency>
-            <groupId>com.vikaushi.aem.enablement</groupId>
-            <artifactId>enablement-project.core</artifactId>
+        	<groupId>${project.groupId}</groupId>
+            <artifactId>training.core</artifactId>
             <version>${project.version}</version>
+        </dependency>
+        <dependency>
+        	<groupId>${project.groupId}</groupId>
+        	<artifactId>training.workflow</artifactId>
+        	<version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>org.osgi</groupId>
@@ -118,9 +123,15 @@
                     <filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>
                     <embeddeds>
                         <embedded>
-                            <groupId>com.vikaushi.aem.enablement</groupId>
-                            <artifactId>enablement-project.core</artifactId>
+                            <groupId>com.vikaushi.aem</groupId>
+                            <artifactId>training.core</artifactId>
                             <target>/apps/my-aem-project/install</target>
+                        </embedded>
+                        
+                         <embedded>
+                           <groupId>${project.groupId}</groupId>
+        					<artifactId>training.workflow</artifactId>
+                            <target>/apps/my-aem-project/install.author</target>
                         </embedded>
                     </embeddeds>
 

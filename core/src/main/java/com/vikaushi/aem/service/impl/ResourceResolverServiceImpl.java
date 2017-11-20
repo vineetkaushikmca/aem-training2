@@ -1,4 +1,4 @@
-package com.vikaushi.aem.enablement.service.impl;
+package com.vikaushi.aem.service.impl;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -12,9 +12,9 @@ import org.apache.sling.api.resource.ResourceResolverFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.vikaushi.aem.enablement.service.ResourceResolverService;
+import com.vikaushi.aem.service.ResourceResolverService;
 
-@Component(name = "com.vikaushi.aem.enablement.service.impl.ResourceResolverServiceImpl", label = "AEM Enablement - Resoure Resolver Service", immediate = true, metatype = false)
+@Component(name = "com.vikaushi.aem.service.impl.ResourceResolverServiceImpl", label = "AEM Enablement - Resoure Resolver Service", immediate = true, metatype = false)
 @Service(value = ResourceResolverService.class)
 public class ResourceResolverServiceImpl implements ResourceResolverService {
 	private static final Logger LOGGER = LoggerFactory.getLogger(ResourceResolverServiceImpl.class);

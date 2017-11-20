@@ -1,4 +1,4 @@
-package com.vikaushi.aem.enablement.utils;
+package com.vikaushi.aem.utils;
 
 import java.util.Arrays;
 import java.util.List;

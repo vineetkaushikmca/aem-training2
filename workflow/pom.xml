@@ -15,9 +15,9 @@
     <!-- P R O J E C T D E S C R I P T I O N -->
     <!-- ====================================================================== -->
 
-    <artifactId>training.core</artifactId>
+    <artifactId>training.workflow</artifactId>
     <packaging>bundle</packaging>
-    <name>Training Core Bundle</name>
+    <name>Training Workflow Bundle</name>
 
     <dependencies>
         <dependency>
@@ -122,7 +122,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Bundle-SymbolicName>com.vikaushi.aem.core</Bundle-SymbolicName>
+                        <Bundle-SymbolicName>com.vikaushi.aem.workflow</Bundle-SymbolicName>
 						<Export-Package>com.vikaushi.aem.*</Export-Package>
 						 <Import-Package>*;resolution:=optional</Import-Package>
                     </instructions>
