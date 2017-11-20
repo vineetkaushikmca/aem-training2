@@ -11,8 +11,8 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>My AEM Project - Reactor Project</name>
-    <description>Maven Multimodule project for My AEM Project.</description>
+    <name>Training Project</name>
+    <description>Maven Multimodule project for Training Project.</description>
 
     <prerequisites>
         <maven>3.0.2</maven>
