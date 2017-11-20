@@ -448,5 +448,7 @@
     <modules>
         <module>core</module>
         <module>ui.apps</module>
+        <module>workflow</module>
+        
     </modules>
 </project>
