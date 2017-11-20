@@ -1,7 +1,7 @@
-package com.vikaushi.aem.enablement.servlets;
+package com.vikaushi.aem.servlets;
 
 import com.adobe.cq.account.api.AccountManagementService;
-import com.vikaushi.aem.enablement.process.ImageCroppingProcess;
+import com.vikaushi.aem.process.ImageCroppingProcess;
 
 import java.util.HashMap;
 import java.util.Map;

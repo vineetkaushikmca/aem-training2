@@ -1,4 +1,4 @@
-package com.vikaushi.aem.enablement.process;
+package com.vikaushi.aem.process;
 
 import java.awt.Rectangle;
 import java.util.List;
@@ -21,9 +21,9 @@ import com.adobe.granite.workflow.exec.WorkflowProcess;
 import com.adobe.granite.workflow.metadata.MetaDataMap;
 import com.day.cq.commons.ImageHelper;
 import com.day.image.Layer;
-import com.vikaushi.aem.enablement.constant.Constant;
-import com.vikaushi.aem.enablement.service.ResourceResolverService;
-import com.vikaushi.aem.enablement.utils.EnablementUtils;
+import com.vikaushi.aem.constant.Constant;
+import com.vikaushi.aem.service.ResourceResolverService;
+import com.vikaushi.aem.utils.EnablementUtils;
 
 @Component(immediate = true, enabled = true, metatype = true)
 @Service(value = WorkflowProcess.class)

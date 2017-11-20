@@ -1,4 +1,4 @@
-package com.vikaushi.aem.enablement.servlets;
+package com.vikaushi.aem.servlets;
 
 import java.io.IOException;
 import java.io.InputStream;

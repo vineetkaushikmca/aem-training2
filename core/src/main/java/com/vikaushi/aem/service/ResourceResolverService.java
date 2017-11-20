@@ -1,4 +1,4 @@
-package com.vikaushi.aem.enablement.service;
+package com.vikaushi.aem.service;
 
 import org.apache.sling.api.resource.LoginException;
 import org.apache.sling.api.resource.ResourceResolver;

@@ -6,8 +6,8 @@
     <!-- P A R E N T P R O J E C T D E S C R I P T I O N -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>com.vikaushi.aem.enablement</groupId>
-        <artifactId>enablement-project</artifactId>
+        <groupId>com.vikaushi.aem</groupId>
+        <artifactId>training</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -15,9 +15,9 @@
     <!-- P R O J E C T D E S C R I P T I O N -->
     <!-- ====================================================================== -->
 
-    <artifactId>enablement-project.workflow</artifactId>
+    <artifactId>training.workflow</artifactId>
     <packaging>bundle</packaging>
-    <name>My AEM Project Bundle</name>
+    <name>Training Workflow Bundle</name>
 
     <dependencies>
         <dependency>
@@ -122,8 +122,8 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Bundle-SymbolicName>com.vikaushi.aem.enablement.enablement-project.workflow</Bundle-SymbolicName>
-						<Export-Package>com.vikaushi.aem.enablement.*</Export-Package>
+                        <Bundle-SymbolicName>com.vikaushi.aem.workflow</Bundle-SymbolicName>
+						<Export-Package>com.vikaushi.aem.*</Export-Package>
 						 <Import-Package>*;resolution:=optional</Import-Package>
                     </instructions>
                 </configuration>
