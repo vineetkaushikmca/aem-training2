@@ -13,7 +13,7 @@
         <f0
             jcr:primaryType="nt:unstructured"
             mode="replace"
-            root="/apps/my-aem-project"
+            root="/apps/training"
             rules="[]"/>
 
         <f1
@@ -26,23 +26,23 @@
         <f2
             jcr:primaryType="nt:unstructured"
             mode="merge"
-            root="/conf/my-aem-project"
+            root="/conf/training"
             rules="[]"/>
 
 
         <f3
             jcr:primaryType="nt:unstructured"
             mode="replace"
-            root="/etc/clientlibs/my-aem-project"
+            root="/etc/clientlibs/training"
             rules="[]"/>
 
 
         <f4
             jcr:primaryType="nt:unstructured"
             mode="replace"
-            root="/etc/designs/my-aem-project"
+            root="/etc/designs/training"
 
-            rules="[include:/etc/designs/my-aem-project/jcr:content,include:/etc/designs/my-aem-project/jcr:content/clientlibs,include:/etc/designs/my-aem-project/jcr:content/clientlibs/.*]"/>
+            rules="[include:/etc/designs/training/jcr:content,include:/etc/designs/training/jcr:content/clientlibs,include:/etc/designs/training/jcr:content/clientlibs/.*]"/>
 
     </filter>
 </jcr:root>

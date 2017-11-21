@@ -14,11 +14,11 @@
             sling:resourceType="acs-commons/components/utilities/designer/clientlibsmanager">
             <head
                 jcr:primaryType="nt:unstructured"
-                css="my-aem-project.main"
-                js="my-aem-project.dependencies"/>
+                css="training.main"
+                js="training.dependencies"/>
             <body
                 jcr:primaryType="nt:unstructured"
-                js="my-aem-project.main"/>
+                js="training.main"/>
         </clientlibs>
     </jcr:content>
 </jcr:root>

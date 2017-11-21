@@ -3,5 +3,5 @@
     jcr:description="UPS Content Page"
     jcr:primaryType="cq:Component"
     jcr:title="UPS Content Page"
-    sling:resourceSuperType="my-aem-project/components/page/basepage"
+    sling:resourceSuperType="training/components/page/basepage"
     componentGroup=".hidden"/>
