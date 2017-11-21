@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/apps/my-aem-project"/>
+    <filter root="/apps/training"/>
 
     <filter root="/apps/sling/servlet/errorhandler"/>
 
-    <filter root="/conf/my-aem-project"/>
+    <filter root="/conf/training"/>
 
 
-    <filter root="/etc/clientlibs/my-aem-project"/>
+    <filter root="/etc/clientlibs/training"/>
 
 
-    <filter root="/etc/designs/my-aem-project">
-        <include pattern="/etc/designs/my-aem-project/jcr:content"/>
+    <filter root="/etc/designs/training">
+        <include pattern="/etc/designs/training/jcr:content"/>
 
-        <include pattern="/etc/designs/my-aem-project/jcr:content/clientlibs"/>
-        <include pattern="/etc/designs/my-aem-project/jcr:content/clientlibs/.*"/>
+        <include pattern="/etc/designs/training/jcr:content/clientlibs"/>
+        <include pattern="/etc/designs/training/jcr:content/clientlibs/.*"/>
 
     </filter>
 

@@ -125,13 +125,13 @@
                         <embedded>
                             <groupId>com.vikaushi.aem</groupId>
                             <artifactId>training.core</artifactId>
-                            <target>/apps/my-aem-project/install</target>
+                            <target>/apps/training/install</target>
                         </embedded>
                         
                          <embedded>
                            <groupId>${project.groupId}</groupId>
         					<artifactId>training.workflow</artifactId>
-                            <target>/apps/my-aem-project/install.author</target>
+                            <target>/apps/training/install.author</target>
                         </embedded>
                     </embeddeds>
 
