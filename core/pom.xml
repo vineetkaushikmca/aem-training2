@@ -97,6 +97,24 @@
             <groupId>javax.inject</groupId>
             <artifactId>javax.inject</artifactId>
         </dependency>
+        <dependency>
+		   <groupId>org.apache.sling</groupId>
+		   <artifactId>org.apache.sling.models.api</artifactId>
+		   <version>1.3.0</version>
+		   <scope>provided</scope>
+		</dependency>
+		<dependency>
+		   <groupId>org.apache.geronimo.specs</groupId>
+		   <artifactId>geronimo-atinject_1.0_spec</artifactId>
+		   <version>1.0</version>
+		   <scope>provided</scope>
+		</dependency>
+		<dependency>
+		   <groupId>com.fasterxml.jackson.core</groupId>
+		   <artifactId>jackson-annotations</artifactId>
+		   <version>2.8.4</version>
+		   <scope>provided</scope>
+		</dependency>
     </dependencies>
 
     <!-- ====================================================================== -->
@@ -107,6 +125,7 @@
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-scr-plugin</artifactId>
+                
                 <executions>
                     <execution>
                         <id>generate-scr-descriptor</id>
@@ -115,6 +134,7 @@
                         </goals>
                     </execution>
                 </executions>
+                
             </plugin>
             <plugin>
                 <groupId>org.apache.felix</groupId>
@@ -125,6 +145,7 @@
                         <Bundle-SymbolicName>com.vikaushi.aem.core</Bundle-SymbolicName>
 						<Export-Package>com.vikaushi.aem.*</Export-Package>
 						 <Import-Package>*;resolution:=optional</Import-Package>
+						 <Sling-Model-Packages>com.vikaushi.aem.models</Sling-Model-Packages>
                     </instructions>
                 </configuration>
             </plugin>

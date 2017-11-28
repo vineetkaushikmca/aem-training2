@@ -17,4 +17,5 @@ final class Parameters implements RequestParameter {
   public String getName() { return getString(); }
   public String getString() {return parameter; }
   public String getString(String s) throws UnsupportedEncodingException { return new String(parameter.getBytes(s));}
+  public void test() {}
 }
