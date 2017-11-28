@@ -20,33 +20,30 @@ public class RegisterServlet extends SlingAllMethodsServlet {
 	private static final long serialVersionUID = 4069551924749113874L;
 	private final Logger LOGGER = LoggerFactory.getLogger(RegisterServlet.class);
 
-@Reference
-  private AccountManagementService accountManagementService;
-@Override
-  public void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
+	@Reference
+	private AccountManagementService accountManagementService;
 
-	LOGGER.debug("Vineet - doppost");
-    String fname = "vinay";
-    String password = "Test@123";
-    try {
-    	LOGGER.debug("Vineet - in side try");
-    	
-    	Map<String, RequestParameter[]> profilemap = new HashMap<String, RequestParameter[]>();
-        profilemap
-            .put("email", new RequestParameter[]{new Parameters("vineet.kaushik.mca@gmail.com")});
-        profilemap
-            .put("familyName", new RequestParameter[]{new Parameters("Vineet")});
+	@Override
+	public void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
 
-    	
-    	boolean flag = accountManagementService
-          .requestAccount(fname, password, profilemap, "http://localhost:4502",
-              "/content/properties");
-    	LOGGER.debug("vineet - flag {}",flag);
-    	LOGGER.debug("Vineet - after requestAccount()");
-      response.getWriter().print("Please Check your EmailId and verify the mail for complete account creation");
-      LOGGER.debug("Vineet - written to writter)");
-    } catch (Exception e) {
-    	LOGGER.debug("Vineet - inside catch and exception is {}",e);
-    }
-  }
+		LOGGER.debug("Vineet - doppost");
+		String fname = "vinay";
+		String password = "Test@123";
+		try {
+			LOGGER.debug("Vineet - in side try");
+
+			Map<String, RequestParameter[]> profilemap = new HashMap<String, RequestParameter[]>();
+			profilemap.put("email", new RequestParameter[] { new Parameters("vineet.kaushik.mca@gmail.com") });
+			profilemap.put("familyName", new RequestParameter[] { new Parameters("Vineet") });
+
+			boolean flag = accountManagementService.requestAccount(fname, password, profilemap, "http://localhost:4502",
+					"/content/properties");
+			LOGGER.debug("vineet - flag {}", flag);
+			LOGGER.debug("Vineet - after requestAccount()");
+			response.getWriter().print("Please Check your EmailId and verify the mail for complete account creation");
+			LOGGER.debug("Vineet - written to writter)");
+		} catch (Exception e) {
+			LOGGER.debug("Vineet - inside catch and exception is {}", e);
+		}
+	}
 }
